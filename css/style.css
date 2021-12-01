@@ -8,5 +8,19 @@ body {
   display: grid;
   grid-template-areas:
   'lg nav nav nav'
-  ''
+  'ig ig1 ig2 ig3'
+  'ft ft ft ft'
+}
+
+#lg{
+  grid-area: lg;
+  background-color: aqua;
+}
+
+#nav{
+  grid-area: nav;
+}
+
+#ig{
+  grid-area: ig;
 }
