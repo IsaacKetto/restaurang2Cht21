@@ -2,12 +2,72 @@ body {
   background:grey;
   height: 100vh;
   width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  filter: opacity(0.8);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: rgba(0, 150, 62, 0.61);
+}
+
+.button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#container3{
+  display: grid;
+  height: calc(100vh - 5rem);
+  width: 100vw;
+  grid-template-areas:
+  'tx tx tx tx'
+  'tx tx im im'
+  'ft ft ft ft'
+}
+
+#container2{
+  display: grid;
+  height: calc(100vh - 5rem);
+  width: 100vw;
+  grid-gap: 5rem;
+  grid-template-areas:
+  'för'
+  'main'
+  'efter'
+  'dr'
+}
+
+#containerTop{
+  display: grid;
+  height: 5rem;
+  width: 100vw;
+  grid-template-columns: 5rem 1fr;
+  grid-template-areas:
+  'lg nav nav nav'
 }
 
 #container{
   display: grid;
+  height: calc(100vh - 5rem);
+  width: 100vw;
+  grid-template-rows: 1fr 7rem;
+  grid-template-columns: calc(100vw*1/4) calc(100vw*1/4) calc(100vw*1/4) calc(100vw*1/4);
   grid-template-areas:
-  'lg nav nav nav'
   'ig ig1 ig2 ig3'
   'ft ft ft ft'
 }
@@ -19,8 +79,41 @@ body {
 
 #nav{
   grid-area: nav;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
 }
 
 #ig{
   grid-area: ig;
+  background-color: azure;
+}
+
+#ig1{
+  grid-area: ig1;
+  background-color: beige;
+}
+
+#ig2{
+  grid-area: ig2;
+  background-color: bisque;
+}
+
+#ig3{
+  grid-area: ig3;
+  background-color: rgb(109, 16, 16);
+}
+
+#ft{
+  grid-area: ft;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: blanchedalmond;
+  text-align: center;
 }
