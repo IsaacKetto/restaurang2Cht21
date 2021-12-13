@@ -1,9 +1,10 @@
 body {
-  background:grey;
+  background:rgb(0, 0, 0);
   height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
+  color: #ffffff;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   filter: opacity(0.8);
 }
@@ -20,6 +21,7 @@ a:hover{
 .button{
   background-color: #ffffff;
   border: none;
+  border-radius: 1rem;
   color: rgb(0, 0, 0);
   padding: 15px 32px;
   text-align: center;
@@ -59,6 +61,15 @@ a:hover{
   width: 100vw;
   grid-template-columns: 5rem 1fr;
   grid-template-areas:
+  'nav nav nav nav'
+}
+
+#containerTop2{
+  display: grid;
+  height: 5rem;
+  width: 100vw;
+  grid-template-columns: 5rem 1fr;
+  grid-template-areas:
   'lg nav nav nav'
 }
 
@@ -73,6 +84,10 @@ a:hover{
   'ft ft ft ft'
 }
 
+#cambria{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: none;
+}
 
 #mat{
   grid-area: mat;
@@ -84,7 +99,7 @@ a:hover{
 
 #lg{
   grid-area: lg;
-  background-image: url(../img/Logo.jpg);
+  background-image: url(../img/Logo.png);
 }
 
 #nav{
