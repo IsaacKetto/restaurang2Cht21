@@ -87,6 +87,7 @@ a:hover{
 #cambria{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-transform: none;
+  font-size: 150%
 }
 
 #mat{
@@ -95,6 +96,12 @@ a:hover{
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  
+}
+
+.menyText{
+  font-family: serif;
+  font-size: large;
 }
 
 #lg{
@@ -117,23 +124,29 @@ a:hover{
 #ig{
   grid-area: ig;
   background-image: url("../Img/sahand-hoseini-BMVAYjPf6mU-unsplash.jpg");
-  background-size: 100%;
+  background-size: 110%;
   background-position: center;
 }
 
 #ig1{
   grid-area: ig1;
-  background-color: beige;
+  background-image: url("../img/Restaurant.jpg");
+  background-position: center;
+  background-size: 110%;
 }
 
 #ig2{
   grid-area: ig2;
   background-color: bisque;
+  background-image: url("../img/Chef.jpg");
+  background-size: 110%;
 }
 
 #ig3{
   grid-area: ig3;
-  background-color: rgb(109, 16, 16);
+  background-image: url(../img/Delivery.jpg);
+  background-position: center;
+  background-size: 110%;
 }
 
 #ft{
@@ -145,3 +158,5 @@ a:hover{
   text-align: center;
   color: white;
 }
+
+
