@@ -1,5 +1,6 @@
 body {
   background:rgb(0, 0, 0);
+  background-image: url(../img/Bakgrund.jpg);
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -77,6 +78,8 @@ a:hover{
   display: grid;
   height: calc(100vh - 5rem);
   width: 100vw;
+  grid-gap: 1rem;
+  overflow-x: hidden;
   grid-template-rows: 1fr 7rem;
   grid-template-columns: calc(100vw*1/4) calc(100vw*1/4) calc(100vw*1/4) calc(100vw*1/4);
   grid-template-areas:
@@ -107,6 +110,7 @@ a:hover{
 #lg{
   grid-area: lg;
   background-image: url(../img/Logo.png);
+  background-color: black;
 }
 
 #nav{
@@ -126,6 +130,7 @@ a:hover{
   background-image: url("../Img/sahand-hoseini-BMVAYjPf6mU-unsplash.jpg");
   background-size: 110%;
   background-position: center;
+  border-radius: 1rem;
 }
 
 #ig1{
@@ -133,6 +138,7 @@ a:hover{
   background-image: url("../img/Restaurant.jpg");
   background-position: center;
   background-size: 110%;
+  border-radius: 1rem;
 }
 
 #ig2{
@@ -140,6 +146,7 @@ a:hover{
   background-color: bisque;
   background-image: url("../img/Chef.jpg");
   background-size: 110%;
+  border-radius: 1rem;
 }
 
 #ig3{
@@ -147,6 +154,7 @@ a:hover{
   background-image: url(../img/Delivery.jpg);
   background-position: center;
   background-size: 110%;
+  border-radius: 1rem;
 }
 
 #ft{
@@ -159,4 +167,71 @@ a:hover{
   color: white;
 }
 
+.size{
+  font-size: 3rem;
+}
 
+.image{
+  width: 600px;
+  height: 400px;
+  background-image: url(../img/Förrätt.jpg);
+  border-radius: 1rem;
+}
+
+.image1{
+  width: 400px;
+  height: 600px;
+  background-image: url(../img/sahand-hoseini-BMVAYjPf6mU-unsplash.jpg);
+  border-radius: 1rem;
+}
+
+.image2{
+  width: 640px;
+  height: 427px;
+  background-image: url(../img/Dessert.jpg);
+  border-radius: 1rem;
+}
+
+.image3{
+  width: ;
+  height: ;
+  background-image: url();
+  border-radius: 1rem;
+}
+
+.hide{
+  opacity: 0;
+  border-radius: 1rem;
+}
+
+.image:hover + .hide{
+  transform: scale(1.01);
+  background-color: black;
+  opacity: 1;
+  transition: 0.5s;
+  color: #ffffff;
+}
+
+.image1:hover + .hide{
+  transform: scale(1.01);
+  background-color: black;
+  opacity: 1;
+  transition: 0.5s;
+  color: #ffffff;
+}
+
+.image2:hover + .hide{
+  transform: scale(1.01);
+  background-color: black;
+  opacity: 1;
+  transition: 0.5s;
+  color: #ffffff;
+}
+
+.image3:hover + .hide{
+  transform: scale(1.01);
+  background-color: black;
+  opacity: 1;
+  transition: 0.5s;
+  color: #ffffff;
+}
