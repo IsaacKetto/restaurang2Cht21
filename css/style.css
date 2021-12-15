@@ -204,8 +204,12 @@ a:hover{
   border-radius: 1rem;
 }
 
+.image:hover, .image1:hover, .image2:hover, .image3:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
 .image:hover + .hide{
-  transform: scale(1.01);
   background-color: black;
   opacity: 1;
   transition: 0.5s;
@@ -235,3 +239,4 @@ a:hover{
   transition: 0.5s;
   color: #ffffff;
 }
+
