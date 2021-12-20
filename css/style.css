@@ -37,10 +37,12 @@ a:hover{
   display: grid;
   height: calc(100vh - 5rem);
   width: 100vw;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 7rem;
   grid-template-areas:
-  'tx tx tx tx'
-  'tx tx im im'
-  'ft ft ft ft'
+  'tx tx'
+  'im tx1'
+  'ft ft'
 }
 
 #container2{
@@ -69,7 +71,7 @@ a:hover{
   display: grid;
   height: 5rem;
   width: 100vw;
-  grid-template-columns: 5rem 1fr;
+  grid-template-columns: 5rem calc(100vw - 5rem);
   grid-template-areas:
   'lg nav nav nav'
 }
@@ -93,6 +95,22 @@ a:hover{
   font-size: 150%
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 #mat{
   grid-area: mat;
   display: flex;
@@ -102,9 +120,49 @@ a:hover{
   
 }
 
+#title{
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: thicker;
+}
+
+#p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.p1{
+  font-family: 'Open Sans';
+}
+
 .menyText{
   font-family: serif;
   font-size: large;
+}
+
+#tx{
+  grid-area: tx;
+  text-align: center;
+}
+
+#tx1{
+  grid-area: tx1;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.418);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+#im{
+  grid-area: im;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#imDesign{
+  border-radius: 1rem;
+  height: 1fr;
+  width: 400px;
 }
 
 #lg{
